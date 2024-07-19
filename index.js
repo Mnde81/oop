@@ -63,6 +63,9 @@ console.log(audi80);
 console.log(audi80.stopDriving());
 console.log(audi80);
 
+console.log(audi80.turnEngineOff());
+console.log(audi80);
+
 console.log(audi80.fuelLeftInTankLiters());
 console.log(audi80);
 
@@ -80,6 +83,8 @@ console.log(audi80);
 
 console.log(audi80.fillTankWithFuel(10));
 console.log(audi80);
+
+
 
 
 

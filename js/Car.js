@@ -20,6 +20,9 @@ export class Car {
     }
 
     turnEngineOff() {
+        if (this.speed > 0) {
+            return `Pries bandydami isjungti varikli pilnai sustokite.`;
+        }
         if (this.isEngineOn === true) {
             this.isEngineOn = false;
             return `Variklis isjungtas.`;
@@ -34,7 +37,7 @@ export class Car {
         } else {        
         this.speed = 90;
         this.fuelLeft = this.fuelLeft - 2 * this.fuelConsumption * km / 100;
-        return `Automobilis pradejo vaziuoti. Isibegejimo atstumas ${km}.`;
+        return `Automobilis pradejo vaziuoti. Isibegejimo atstumas ${km} km.`;
         }
     }
 
@@ -50,9 +53,8 @@ export class Car {
 
     stopDriving() {
         if (this.speed > 0) {       
-        this.speed = 0;
-        this.isEngineOn = false;       
-        return `Automobilis sustojo. Isjunge varikli.`;
+        this.speed = 0;             
+        return `Automobilis sustojo.`;
         } else {
             return `Automobilis nejuda.`
         }
