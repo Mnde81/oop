@@ -1,8 +1,9 @@
-export class Fish {
+export class Bird {
     constructor(name) {
         this.name = name;
-        this.animalType = 'fish';  
-        this.finCount = 3; 
+        this.animalType = 'bird';  
+        this.wingsCount = 2;
+        this.legsCount = 2; 
         this.sound = '';  
         this.soundCount = 1;
         
